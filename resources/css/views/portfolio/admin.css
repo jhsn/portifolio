@@ -1,0 +1,100 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import 'admin-lte/dist/css/adminlte.min.css';
+
+.admin-brand-mark {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f766e, #115e59);
+    color: #fff;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.app-main {
+    background:
+        radial-gradient(circle at top left, rgba(15, 118, 110, 0.08), transparent 20%),
+        #f4f7fb;
+}
+
+.small-box {
+    border-radius: 1rem;
+}
+
+.small-box .icon > i,
+.small-box .small-box-icon > i,
+.small-box-icon > i {
+    font-size: 2rem;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.card-footer {
+    background: transparent;
+}
+
+.feedback-banner {
+    display: flex;
+    align-items: start;
+    gap: 0.85rem;
+    padding: 0.95rem 1.05rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(15, 118, 110, 0.16);
+    background: linear-gradient(135deg, rgba(15, 118, 110, 0.12), rgba(15, 118, 110, 0.04));
+    color: #0f5132;
+    box-shadow: 0 12px 28px rgba(15, 118, 110, 0.08);
+}
+
+.feedback-banner strong {
+    display: block;
+    margin-bottom: 0.15rem;
+}
+
+.admin-application-card {
+    padding: 0.9rem 1rem;
+    border-radius: 0.9rem;
+    background: #f4f7fb;
+    border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.admin-application-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.application-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.application-cover-letter {
+    white-space: pre-line;
+    color: #334155;
+    line-height: 1.7;
+}
+
+.sidebar-menu .nav-link.active {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+@media (max-width: 767.98px) {
+    .application-summary-grid {
+        grid-template-columns: 1fr;
+    }
+}

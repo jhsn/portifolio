@@ -1,0 +1,312 @@
+.portfolio-shell {
+    width: min(1180px, calc(100% - 1.5rem));
+    margin: 0 auto;
+    padding: 1.25rem 0 3rem;
+}
+
+.hero-card,
+.search-card,
+.vacancy-card,
+.empty-card,
+.stat-card,
+.capability-card {
+    border-radius: 1.5rem;
+    border: 1px solid var(--portfolio-border);
+    background: var(--portfolio-surface);
+    box-shadow: var(--portfolio-shadow);
+}
+
+.hero-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.95fr);
+    gap: 1rem;
+    padding: 1.35rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.hero-copy {
+    position: relative;
+}
+
+.hero-copy::after {
+    content: '';
+    position: absolute;
+    right: -2rem;
+    top: -2rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 999px;
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.14), rgba(249, 115, 22, 0));
+    pointer-events: none;
+}
+
+.eyebrow {
+    display: inline-flex;
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(15, 118, 110, 0.12);
+    color: var(--portfolio-primary-dark);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.eyebrow-soft {
+    background: rgba(15, 23, 42, 0.06);
+    color: var(--portfolio-text);
+}
+
+.hero-card h1,
+.admin-header-card h1,
+.detail-hero h1 {
+    margin: 0.9rem 0 0.8rem;
+    font-size: clamp(2.2rem, 4vw, 4.1rem);
+    line-height: 0.96;
+    letter-spacing: -0.05em;
+}
+
+.hero-card p,
+.search-form label,
+.vacancy-card p,
+.empty-card p,
+.detail-hero p,
+.panel-card p,
+.admin-header-card p,
+.search-heading p,
+.capability-card p {
+    color: var(--portfolio-muted);
+    line-height: 1.65;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.4rem;
+}
+
+.hero-proof {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.hero-proof span {
+    padding: 0.55rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.05);
+    font-size: 0.84rem;
+    font-weight: 700;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0.75rem 1.1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid transparent;
+    transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+}
+
+.button:hover {
+    transform: translateY(-1px);
+}
+
+.button-primary {
+    background: linear-gradient(135deg, var(--portfolio-primary), var(--portfolio-primary-dark));
+    color: #fff;
+}
+
+.button-secondary {
+    background: var(--portfolio-secondary);
+    color: var(--portfolio-text);
+    border-color: rgba(15, 23, 42, 0.06);
+}
+
+.hero-side {
+    display: grid;
+    align-items: stretch;
+}
+
+.stats-grid {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.stat-card {
+    padding: 1rem 1.1rem;
+}
+
+.stat-card-primary {
+    background: linear-gradient(135deg, rgba(15, 118, 110, 0.12), rgba(15, 118, 110, 0.04));
+}
+
+.stat-card strong {
+    display: block;
+    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    line-height: 1;
+}
+
+.stat-card span {
+    color: var(--portfolio-muted);
+}
+
+.capability-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.capability-card {
+    padding: 1.15rem;
+}
+
+.capability-card strong {
+    display: block;
+    margin-bottom: 0.55rem;
+    font-size: 1rem;
+}
+
+.search-card {
+    padding: 1.15rem;
+    margin-bottom: 1rem;
+}
+
+.search-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: end;
+    margin-bottom: 1rem;
+}
+
+.search-heading h2 {
+    margin: 0.5rem 0 0;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+}
+
+.search-form {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.search-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.75rem;
+}
+
+.search-row input,
+.application-form input,
+.application-form textarea {
+    width: 100%;
+    min-height: 46px;
+    padding: 0.8rem 0.95rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    background: #fff;
+    color: var(--portfolio-text);
+}
+
+.search-row input:focus,
+.application-form input:focus,
+.application-form textarea:focus {
+    outline: 2px solid rgba(15, 118, 110, 0.2);
+    border-color: rgba(15, 118, 110, 0.45);
+}
+
+.vacancy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.vacancy-card,
+.empty-card,
+.panel-card,
+.detail-hero,
+.detail-highlight,
+.feedback-success {
+    padding: 1.25rem;
+}
+
+.vacancy-meta,
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.vacancy-meta {
+    margin-bottom: 0.85rem;
+    color: var(--portfolio-muted);
+    font-size: 0.84rem;
+}
+
+.vacancy-card h2,
+.vacancy-card h3,
+.panel-card h2,
+.related-section h2 {
+    margin: 0 0 0.8rem;
+    font-size: 1.35rem;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    list-style: none;
+    margin: 0 0 1rem;
+    padding: 0;
+}
+
+.tag-list li {
+    padding: 0.45rem 0.72rem;
+    border-radius: 999px;
+    background: #edf3f6;
+    color: #28414b;
+    font-size: 0.84rem;
+    font-weight: 700;
+}
+
+.empty-card strong,
+.back-link,
+.section-header a {
+    font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+    .hero-card,
+    .vacancy-grid,
+    .capability-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-heading {
+        align-items: start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .portfolio-shell {
+        width: min(100% - 1rem, 1180px);
+        padding-top: 0.8rem;
+    }
+
+    .search-row,
+    .hero-actions {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+}

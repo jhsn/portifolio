@@ -1,0 +1,1 @@
+var e=document.querySelector(`#search`);e&&(e.addEventListener(`focus`,()=>{document.body.dataset.searching=`true`}),e.addEventListener(`blur`,()=>{document.body.dataset.searching=`false`}));

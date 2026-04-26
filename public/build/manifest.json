@@ -1,0 +1,71 @@
+{
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": {
+    "file": "assets/bootstrap-icons-BeopsB42.woff",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff"
+  },
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
+    "file": "assets/bootstrap-icons-mSm7cUeB.woff2",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-Dk0d-23L.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/views/auth/login.css": {
+    "file": "assets/login-BUhf-9am.css",
+    "name": "login",
+    "names": [
+      "login.css"
+    ],
+    "src": "resources/css/views/auth/login.css",
+    "isEntry": true
+  },
+  "resources/css/views/portfolio/admin.css": {
+    "file": "assets/admin-Chcoea1u.css",
+    "name": "admin",
+    "names": [
+      "admin.css"
+    ],
+    "src": "resources/css/views/portfolio/admin.css",
+    "isEntry": true,
+    "assets": [
+      "assets/bootstrap-icons-mSm7cUeB.woff2",
+      "assets/bootstrap-icons-BeopsB42.woff"
+    ]
+  },
+  "resources/css/views/portfolio/home.css": {
+    "file": "assets/home-Ca7fAJRr.css",
+    "name": "home",
+    "names": [
+      "home.css"
+    ],
+    "src": "resources/css/views/portfolio/home.css",
+    "isEntry": true
+  },
+  "resources/css/views/portfolio/show.css": {
+    "file": "assets/show-C5GGAPoR.css",
+    "name": "show",
+    "names": [
+      "show.css"
+    ],
+    "src": "resources/css/views/portfolio/show.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-usMF7L7-.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/views/portfolio/home.js": {
+    "file": "assets/home-SxFZ1HZs.js",
+    "name": "home",
+    "src": "resources/js/views/portfolio/home.js",
+    "isEntry": true
+  }
+}
