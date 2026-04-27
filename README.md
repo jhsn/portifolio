@@ -122,15 +122,6 @@ Arquivo principal:
 - `resources/js/views/portfolio` scripts especificos por tela
 - `tests/Feature/RecruitmentFlowTest.php` cobertura principal dos fluxos
 
-## O que vale destacar em entrevista
-
-- separacao clara entre portal publico e retaguarda
-- uso de `FormRequest` para validacao
-- relacao entre vagas e candidaturas com Eloquent
-- upload de curriculo com acesso protegido
-- CRUD completo de vagas no painel
-- testes cobrindo comportamento de negocio
-
 ## Proximos passos possiveis
 
 - notificacao por e-mail ao receber candidatura
